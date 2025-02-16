@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const ownerSchema = mongoose.Schema({
     fullname: {
         type: String,
-        minlength: 5,
+        minlength: 3,
         trim: true
     },
     email: String,

@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const userSchema = mongoose.Schema({
   fullname: {
     type: String,
-    minlength: 5,
+    minlength: 3,
     trim: true,
   },
   email: String,
@@ -12,7 +12,7 @@ const userSchema = mongoose.Schema({
     type: Array,
     default: [],
   },
-  isadmin: Boolean,
+ 
   orders: {
     type: Array,
     default: [],
